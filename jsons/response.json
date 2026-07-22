@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "tittle": "Basic",
+        "rate": "1230",
+        "Features": [
+            "Foundation & Basement, Random Rubble Masonry",
+            "Super Structure - Solid Block Work",
+            "Lintel would be placed on the entire wall (Lintel at 2.1m)",
+            "SANKAR, RAMCO, good quality ISI brand"
+        ]
+    },
+    {
+        "id": 2,
+        "tittle": "Standard",
+        "rate": "1700",
+        "Features": [
+            "Foundation & Basement, Random Rubble Masonry",
+            "Super Structure - Solid Block Work",
+            "Lintel would be placed on the entire wall (Lintel at 2.1m)",
+            "SANKAR, RAMCO, good quality ISI brand"
+        ]
+    },
+    {
+        "id": 3,
+        "tittle": "Premium",
+        "rate": "1900",
+        "Features": [
+            "Foundation & Basement, Random Rubble Masonry",
+            "Super Structure - Solid Block Work",
+            "Putty Finishing",
+            "Modular Kitchen"
+        ]
+    }
+]
