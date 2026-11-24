@@ -103,7 +103,7 @@ class CI_Session_memcached_driver extends CI_Session_driver implements SessionHa
 	 * @param	string	$name		Session cookie name, unused
 	 * @return	bool
 	 */
-	public function open($save_path, $name): bool
+	public function open($save_path, $name)
 	{
 		$this->_memcached = new Memcached();
 		$this->_memcached->setOption(Memcached::OPT_BINARY_PROTOCOL, TRUE); // required for touch() usage
@@ -160,7 +160,7 @@ class CI_Session_memcached_driver extends CI_Session_driver implements SessionHa
 	 * @param	string	$session_id	Session ID
 	 * @return	string	Serialized session data
 	 */
-	public function read($session_id): string
+	public function read($session_id)
 	{
 		if (isset($this->_memcached) && $this->_get_lock($session_id))
 		{
@@ -186,7 +186,7 @@ class CI_Session_memcached_driver extends CI_Session_driver implements SessionHa
 	 * @param	string	$session_data	Serialized session data
 	 * @return	bool
 	 */
-	public function write($session_id, $session_data): bool
+	public function write($session_id, $session_data)
 	{
 		if ( ! isset($this->_memcached, $this->_lock_key))
 		{
@@ -237,7 +237,7 @@ class CI_Session_memcached_driver extends CI_Session_driver implements SessionHa
 	 *
 	 * @return	bool
 	 */
-	public function close(): bool
+	public function close()
 	{
 		if (isset($this->_memcached))
 		{
@@ -264,7 +264,7 @@ class CI_Session_memcached_driver extends CI_Session_driver implements SessionHa
 	 * @param	string	$session_id	Session ID
 	 * @return	bool
 	 */
-	public function destroy($session_id): bool
+	public function destroy($session_id)
 	{
 		if (isset($this->_memcached, $this->_lock_key))
 		{
@@ -286,7 +286,7 @@ class CI_Session_memcached_driver extends CI_Session_driver implements SessionHa
 	 * @param	int 	$maxlifetime	Maximum lifetime of sessions
 	 * @return	bool
 	 */
-	public function gc($maxlifetime): int
+	public function gc($maxlifetime)
 	{
 		// Not necessary, Memcached takes care of that.
 		return $this->_success;

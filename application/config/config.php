@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/petalite.in/';
+// $config['base_url'] = 'http://localhost:8081/petalite.in';
+$config['base_url'] = 'https://'.$_SERVER['HTTP_HOST'];
 
 
 /*
